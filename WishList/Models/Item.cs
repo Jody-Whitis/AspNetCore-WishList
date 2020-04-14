@@ -12,7 +12,7 @@ namespace WishList.Models
 {
     public class Item : Controller
     {
-        public int ID {get;set;}
+        public int Id {get;set;}
 
         [Required]
         [MaxLength(50)]
