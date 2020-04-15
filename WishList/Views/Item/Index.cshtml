@@ -1,0 +1,11 @@
+﻿@model List<WishList.Models.Item>
+<h1>WishList</h1><a asp-action="create">Add item</a>
+                 <ul>
+                     @{ foreach (WishList.Models.Item element in Model)
+                         {
+                             <li>@element.Description</li><a asp-action="delete" asp-route-id="@element.Id" property="delete"></a>
+                         }
+
+                     }
+
+                 </ul>
